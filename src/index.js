@@ -40,3 +40,44 @@ const siteContent = { // DO NOT CHANGE THIS OBJECT
 };
 
 console.log('project wired!')
+
+const navA = document.querySelectorAll('nav a')
+let navKeys = Object.keys(siteContent.nav)
+for(let i = 0; i<navKeys.length;i++){
+  navA[i].textContent = siteContent.nav[navKeys[i]];
+  navA[i].className = "italic";
+}
+//set a within nav of header
+
+for(let x in siteContent.cta){
+  document.querySelector(x).textContent = siteContent.cta[x]
+}
+//set cta section
+
+document.querySelector('#logo-img').src = siteContent.images['logo-img']
+document.querySelector('#cta-img').src = siteContent.images['cta-img']
+document.querySelector("#middle-img").src = siteContent.images["accent-img"]
+//set images
+
+document.querySelector(".contact h4").textContent = siteContent.contact['contact-h4']
+document.querySelector(".contact p:nth-of-type(1)").textContent = siteContent.contact.address
+document.querySelector(".contact p:nth-of-type(2)").textContent = siteContent.contact.phone
+document.querySelector(".contact p:nth-of-type(3)").textContent = siteContent.contact.email
+//set contact list
+
+const footerStuff = document.querySelector('footer a')
+footerStuff.className = 'bold'
+footerStuff.textContent = siteContent.footer.copyright
+//footer set
+
+
+document.querySelector(".top-content .text-content:nth-of-type(1) h4").textContent = siteContent['main-content']['features-h4']
+document.querySelector(".top-content .text-content:nth-of-type(1) p").textContent = siteContent['main-content']['features-content']
+document.querySelector(".top-content .text-content:nth-of-type(2) h4").textContent = siteContent['main-content']['about-h4']
+document.querySelector(".top-content .text-content:nth-of-type(2) p").textContent = siteContent['main-content']['about-content']
+document.querySelector(".bottom-content .text-content:nth-of-type(1) h4").textContent = siteContent['main-content']['services-h4']
+document.querySelector(".bottom-content .text-content:nth-of-type(1) p").textContent = siteContent['main-content']['services-content']
+document.querySelector(".bottom-content .text-content:nth-of-type(2) h4").textContent = siteContent['main-content']['product-h4']
+document.querySelector(".bottom-content .text-content:nth-of-type(2) p").textContent = siteContent['main-content']['product-content']
+document.querySelector(".bottom-content .text-content:nth-of-type(3) h4").textContent = siteContent['main-content']['vision-h4']
+document.querySelector(".bottom-content .text-content:nth-of-type(3) p").textContent = siteContent['main-content']['vision-content']
