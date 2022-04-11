@@ -81,3 +81,4 @@ document.querySelector(".bottom-content .text-content:nth-of-type(2) h4").textCo
 document.querySelector(".bottom-content .text-content:nth-of-type(2) p").textContent = siteContent['main-content']['product-content']
 document.querySelector(".bottom-content .text-content:nth-of-type(3) h4").textContent = siteContent['main-content']['vision-h4']
 document.querySelector(".bottom-content .text-content:nth-of-type(3) p").textContent = siteContent['main-content']['vision-content']
+//set main content
